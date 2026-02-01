@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Container pour centrer le logo */
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Style de l'image (le cerveau polygone) */
+      .tunjob-logo {
+        width: 1000px; /* S'adapte sur mobile */
+        height: auto;
+        transition: transform 0.4s ease; /* Animation fluide */
+      }
+
+      /* Effet de survol (Hover) */
+      .tunjob-logo:hover {
+        transform: scale(1.05); /* L'image grandit légèrement */
+      }
+
+      /* Style pour le texte en dessous si vous ne l'avez pas dans l'image */
+      .tagline {
+        margin-top: 20px;
+        font-family: "Arial", sans-serif;
+        letter-spacing: 3px;
+        color: #003366;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-container">
+      <img
+        src="bc4bd204-7c38-4fd4-b565-1ad6ae7688bc.jpg"
+        alt="TUNJOB Logo"
+        class="tunjob-logo"
+      />
+    </div>
+  </body>
+</html>

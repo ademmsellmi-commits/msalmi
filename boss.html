@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Espace Recruteur</title>
+    <link rel="stylesheet" href="boss.css"></link>
+  </head>
+  <body>
+    <h2>Post a job</h2>
+    <div class="form-container">
+      <form action="boss.php" method="POST">
+        <div class="group">
+          <label>job topic :</label>
+          <input
+            type="text"
+            name="sujet"
+            placeholder="Ex: Jardinage, Développement Web..."
+            required
+          />
+        </div>
+        <div class="group">
+          <label>your name (Boss) :</label>
+          <input type="text" name="nom_boss" required />
+        </div>
+        <div class="group">
+          <label>phone number :</label>
+          <input type="tel" name="tel" placeholder="0123456789" required />
+        </div>
+        <div class="group">
+          <label>Date of begin :</label>
+          <input type="date" name="date_debut" required />
+        </div>
+        <div class="group">
+          <label>end date :</label>
+          <input type="date" name="date_fin" required />
+        </div>
+        <button type="submit">post the offer</button>
+      </form>
+    </div>
+  </body>
+</html>

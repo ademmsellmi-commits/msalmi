@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>registration form</title>
+    <link rel="stylesheet" href="travailleur.css" />
+  </head>
+  <body>
+    <h2>save data</h2>
+    <form action="travailleur.php" method="POST">
+      <div>
+        <label>Name :</label>
+        <input type="text" name="nom" required />
+      </div>
+      <div>
+        <label>Surname :</label>
+        <input type="text" name="prenom" required />
+      </div>
+      <div>
+        <label>Phone number :</label>
+        <input type="tel" name="tel" placeholder="0123456789" required />
+      </div>
+      <div>
+        <label>date of birth :</label>
+        <input type="date" name="date_naiss" required />
+      </div>
+      <div>
+        <label>Experience :</label>
+        <textarea name="experience" rows="3"></textarea>
+      </div>
+      <div>
+        <label>available :</label>
+        <select name="disponible">
+          <option value="Oui">Oui</option>
+          <option value="Non">Non</option>
+        </select>
+      </div>
+      <button type="submit">download</button>
+    </form>
+  </body>
+</html>
